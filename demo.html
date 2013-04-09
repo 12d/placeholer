@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>DEMO FOR CTRIP</title>
+	<style type="text/css">
+		.placeholder{color:#AAA;}
+	</style>
+</head>
+<body>
+	<input type="text" placeholder="请输入用户名" id="um"/>
+	<input type="password" placeholder="输入密码" id="pwd"/>
+	<textarea placeholder="输入文章" id="article"></textarea>
+	<script src="jQuery.js"></script>
+	<script src="placeholder.js"></script>
+	<script>
+		//
+		jQuery(document).ready(function (){
+			new jQuery.PlaceHolder($('#um'), {text:'哈哈'});
+			$('#article').placeholder();
+			$('#pwd').placeholder();
+		});
+				
+		//
+	</script>
+</body>
+</html>
